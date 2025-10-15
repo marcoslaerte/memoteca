@@ -11,7 +11,7 @@
       formControlName="conteudo"
       placeholder="Digite o pensamento"
     >
-    <div class="mensagem__erro" *ngIf="formulario.get('conteudo')?.errors && formulario.get('autoria')?.touched">
+    <div class="mensagem__erro" *ngIf="formulario.get('conteudo')?.errors && formulario.get('conteudo')?.touched">
       Pensamento é obrigatório!
     </div>
     <label for="pensamento">Autoria ou fonte</label>
